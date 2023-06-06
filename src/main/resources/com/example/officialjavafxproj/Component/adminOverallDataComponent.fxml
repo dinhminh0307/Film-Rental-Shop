@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="500.0" style="-fx-padding: 30; -fx-border-color: #ccc; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.Component.AdminOverallDataControllers">
+   <children>
+      <Label fx:id="todayRevenueDisplay" prefHeight="60.0" prefWidth="534.0">
+         <graphic>
+            <Label prefHeight="60.0" prefWidth="182.0" text="Today Revenue: ">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalCustomerDisplay" prefHeight="60.0" prefWidth="534.0">
+         <graphic>
+            <Label prefHeight="60.0" prefWidth="189.0" text="Total Customers: ">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalItemsDisplay" prefHeight="60.0" prefWidth="534.0">
+         <graphic>
+            <Label prefHeight="60.0" prefWidth="140.0" text="Total Items: ">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalRevenueDisplay" prefHeight="60.0" prefWidth="480.0">
+         <graphic>
+            <Label prefHeight="60.0" prefWidth="169.0" text="Total Revenue: ">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

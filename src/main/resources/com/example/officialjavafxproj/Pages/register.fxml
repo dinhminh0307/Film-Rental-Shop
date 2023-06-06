@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="600.0" style="-fx-background-color: #232830;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.RegisterControllers">
+    <top>
+        <AnchorPane prefHeight="57.0" prefWidth="600.0" style="-fx-border-color: #fff; -fx-border-width: 0 0 2 0;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="30.0" layoutY="16.0" prefHeight="29.0" prefWidth="540.0" styleClass="color_font" stylesheets="@../styles.css" text="Register and become our beloved customer">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            <Button fx:id="exitButton" layoutX="531.0" layoutY="16.0" mnemonicParsing="false" onAction="#onExitButton" prefHeight="25.0" prefWidth="37.0" styleClass="button__info" stylesheets="@../styles.css" text="X">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font></Button>
+            </children>
+        </AnchorPane>
+    </top>
+   <center>
+        <AnchorPane prefHeight="529.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+            <VBox alignment="TOP_RIGHT" layoutX="124.0" layoutY="27.0" prefHeight="69.0" prefWidth="377.0">
+               <children>
+                  <HBox prefHeight="33.0" prefWidth="377.0">
+                     <children>
+                            <Label prefHeight="31.0" prefWidth="70.0" styleClass="color_font" stylesheets="@../styles.css" text="Fullname">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="fullnameTextField" onKeyReleased="#FieldOnReleased" prefHeight="34.0" prefWidth="306.0" promptText="Enter your fullname..." styleClass="input_field" stylesheets="@../styles.css" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="fullNameErrorMessage" prefHeight="30.0" prefWidth="306.0" styleClass="error_message" stylesheets="@../styles.css" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="125.0" layoutY="96.0" prefHeight="66.0" prefWidth="377.0">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="377.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="70.0" styleClass="color_font" stylesheets="@../styles.css" text="Address">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addressTextField" onKeyReleased="#FieldOnReleased" prefHeight="34.0" prefWidth="306.0" promptText="Enter your address..." styleClass="input_field" stylesheets="@../styles.css" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="addressErrorMessage" prefHeight="30.0" prefWidth="307.0" styleClass="error_message" stylesheets="@../styles.css" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="82.0" layoutY="162.0" prefHeight="67.0" prefWidth="419.0">
+               <children>
+                  <HBox prefHeight="34.0" prefWidth="432.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="112.0" styleClass="color_font" stylesheets="@../styles.css" text="Phone Number">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="phoneNumTextField" onKeyReleased="#FieldOnReleased" prefHeight="34.0" prefWidth="306.0" promptText="Enter your phone number..." styleClass="input_field" stylesheets="@../styles.css" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="phoneNumErrorMessage" prefHeight="30.0" prefWidth="308.0" styleClass="error_message" stylesheets="@../styles.css" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="114.0" layoutY="229.0" prefHeight="67.0" prefWidth="387.0">
+               <children>
+                  <HBox prefHeight="34.0" prefWidth="377.0">
+                     <children>
+                            <Label prefHeight="31.0" prefWidth="81.0" styleClass="color_font" stylesheets="@../styles.css" text="Username">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="usernameTextField" onKeyReleased="#FieldOnReleased" prefHeight="34.0" prefWidth="306.0" promptText="Enter your username..." styleClass="input_field" stylesheets="@../styles.css" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="userNameErrorMessage" prefHeight="30.0" prefWidth="306.0" styleClass="error_message" stylesheets="@../styles.css" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="113.0" layoutY="296.0" prefHeight="68.0" prefWidth="388.0">
+               <children>
+                  <HBox prefHeight="34.0" prefWidth="377.0">
+                     <children>
+                            <Label prefHeight="31.0" prefWidth="82.0" styleClass="color_font" stylesheets="@../styles.css" text="Password">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </Label>
+                            <PasswordField fx:id="passwordTextField" onKeyReleased="#FieldOnReleased" prefHeight="34.0" prefWidth="306.0" promptText="Enter your password..." styleClass="input_field" stylesheets="@../styles.css" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="passwordErrorMessage" prefHeight="30.0" prefWidth="308.0" styleClass="error_message" stylesheets="@../styles.css" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="58.0" layoutY="364.0" prefHeight="67.0" prefWidth="444.0">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="447.0">
+                     <children>
+                            <Label prefHeight="31.0" prefWidth="140.0" styleClass="color_font" stylesheets="@../styles.css" text="Confirm Password">
+                                <font>
+                                    <Font size="14.0" />
+                                </font>
+                            </Label>
+                            <PasswordField fx:id="confirmPassTextField" onKeyReleased="#FieldOnReleased" prefHeight="34.0" prefWidth="306.0" promptText="Confirm your password..." styleClass="input_field" stylesheets="@../styles.css" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="rePasswordErrorMessage" contentDisplay="CENTER" prefHeight="30.0" prefWidth="310.0" styleClass="error_message" stylesheets="@../styles.css" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" layoutX="89.0" layoutY="439.0" prefHeight="66.0" prefWidth="410.0">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="406.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="109.0" styleClass="color_font" stylesheets="@../styles.css" text="Upload Profile">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="imageUploadButton" mnemonicParsing="false" onAction="#onImageUploadButton" prefHeight="29.0" prefWidth="306.0" styleClass="button__default" stylesheets="@../styles.css" text="Upload Image" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="imageMessage" alignment="CENTER" prefHeight="30.0" prefWidth="404.0" style="-fx-text-fill: #fff;" stylesheets="@../styles.css" />
+               </children>
+            </VBox>
+                <Label fx:id="registerMessage" layoutX="102.0" layoutY="6.0" prefHeight="17.0" prefWidth="414.0" />
+                <Button fx:id="registerButton" disable="true" layoutX="141.0" layoutY="505.0" mnemonicParsing="false" onAction="#onRegisterButton" prefHeight="34.0" prefWidth="345.0" text="Register">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+                </Button>
+                <Button fx:id="toLoginButton" layoutX="141.0" layoutY="549.0" mnemonicParsing="false" onAction="#onToLoginButton" prefHeight="34.0" prefWidth="345.0" text="Back to Login">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+                </Button>
+            <Button layoutX="516.0" layoutY="229.0" mnemonicParsing="false" onAction="#onUsernameInfoButton" prefHeight="25.0" prefWidth="25.0" styleClass="button__info" stylesheets="@../styles.css" text="!" />
+            <Button layoutX="516.0" layoutY="296.0" mnemonicParsing="false" onAction="#onPasswordInfoButton" prefHeight="25.0" prefWidth="25.0" styleClass="button__info" stylesheets="@../styles.css" text="!" />
+            </children>
+        </AnchorPane>
+   </center>
+</BorderPane>

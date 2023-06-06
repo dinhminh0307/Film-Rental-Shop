@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="520.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 15;" stylesheets="@../component.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.Component.CartComponentControllers">
+   <children>
+      <ImageView fx:id="productCartImage" fitHeight="170.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </HBox.margin></ImageView>
+      <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="352.0" style="-fx-padding: 10;">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="23.0" prefWidth="296.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onViewItemButton" prefHeight="26.0" prefWidth="176.0" styleClass="button__info" stylesheets="@../styles.css" text="View Item" />
+                  <Label fx:id="warningMessage" prefHeight="25.0" prefWidth="270.0" style="-fx-text-fill: #E76161;">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font></Label>
+                  <Button mnemonicParsing="false" onAction="#onDeleteButton" styleClass="button__info" stylesheets="@../styles.css" text="X" />
+               </children>
+            </HBox>
+            <Label fx:id="productCartTitleDisplay" prefHeight="71.0" prefWidth="300.0" style="-fx-wrap-text: true;" text="Sekiro: Shadow Die Twice" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="49.0" prefWidth="296.0">
+               <children>
+                  <Label fx:id="productCartPriceDisplay" prefHeight="33.0" prefWidth="110.0" style="-fx-wrap-text: true;" text="54" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <Label prefHeight="35.0" prefWidth="8.0" style="-fx-wrap-text: true;" text="\$" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="93.0" />
+                  <Label fx:id="productCartLoanDisplay" prefHeight="33.0" prefWidth="93.0" style="-fx-wrap-text: true;" text="2-DAY" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="300.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="296.0">
+                     <children>
+                        <Button fx:id="downButton" mnemonicParsing="false" onAction="#onDownButton" style="-fx-border-width: 2;" styleClass="button__info" stylesheets="@../styles.css" text="&lt;" />
+                        <Label fx:id="quantityDisplay" alignment="CENTER" prefHeight="24.0" prefWidth="56.0" text="1" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font></Label>
+                        <Button fx:id="increaseButton" mnemonicParsing="false" onAction="#onUpButton" style="-fx-border-width: 2;" styleClass="button__info" stylesheets="@../styles.css" text="&gt;" />
+                        <Button mnemonicParsing="false" onAction="#onUpdateButton" prefHeight="25.0" prefWidth="80.0" styleClass="button__info" stylesheets="@../styles.css" text="Update">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="rounded_box__v3" />
+      <String fx:value="shadow" />
+   </styleClass>
+</HBox>

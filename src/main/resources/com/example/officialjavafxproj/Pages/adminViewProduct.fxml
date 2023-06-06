@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.AdminViewProductController">
+    <center>
+        <VBox prefHeight="574.0" prefWidth="631.0" BorderPane.alignment="CENTER">
+            <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                        <Label contentDisplay="CENTER" prefHeight="80.0" prefWidth="529.0" text="All Product">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                        </Label>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#addProductButton" prefHeight="48.0" prefWidth="151.0" text="Add Product" />
+               </children>
+            </HBox>
+                <ScrollPane prefHeight="614.0" prefWidth="701.0" stylesheets="@../styles.css">
+                    <content>
+                        <GridPane fx:id="gridPane" prefHeight="40.0" prefWidth="257.0" style="-fx-padding: 20px;" />
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+    </center>
+    <left>
+        <VBox fx:id="sortLayout" prefHeight="556.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <VBox alignment="CENTER" prefHeight="712.0" prefWidth="240.0" BorderPane.alignment="CENTER" />
+    </right>
+    <top>
+        <AnchorPane fx:id="adminNavbar" prefHeight="126.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+    </top>
+   <bottom>
+      <AnchorPane fx:id="footerPane" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

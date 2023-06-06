@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onViewUserProfileButton" prefHeight="209.0" prefWidth="471.0" style="-fx-border-color: #ccc; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.Component.AdminUserControllers">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></ImageView>
+      <VBox alignment="TOP_RIGHT" prefHeight="179.0" prefWidth="325.0" style="-fx-padding: 10;">
+         <children>
+            <Label fx:id="userNameDisplay" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="297.0" style="-fx-wrap-text: true;" text="Dinh Ngoc Minh">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <Label prefHeight="17.0" prefWidth="55.0" text="Name: ">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+            <Label fx:id="userIdDisplay" prefHeight="0.0" prefWidth="296.0" style="-fx-wrap-text: true;" text="C009">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <graphic>
+                  <Label prefHeight="20.0" prefWidth="62.0" text="UserID: ">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+            <Label fx:id="userPhoneDisplay" prefHeight="0.0" prefWidth="296.0" style="-fx-wrap-text: true;" text="0389239798">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <graphic>
+                  <Label prefHeight="20.0" prefWidth="95.0" text="PhoneNum: ">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+            <Label fx:id="userAddressDisplay" prefHeight="39.0" prefWidth="296.0" style="-fx-wrap-text: true;" text="RegularAccount">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <graphic>
+                  <Label prefHeight="20.0" prefWidth="113.0" text="AccountType: ">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="300.0" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

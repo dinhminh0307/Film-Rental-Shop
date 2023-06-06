@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onOrderClicked" prefHeight="159.0" prefWidth="520.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 15;" stylesheets="@../component.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.Component.OrderComponentControllers">
+   <children>
+      <ImageView fx:id="orderImage" fitHeight="145.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets bottom="5.0" left="9.0" top="5.0" />
+         </HBox.margin></ImageView>
+      <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="352.0" style="-fx-padding: 10;">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="296.0">
+               <children>
+                  <Label fx:id="orderStatus" alignment="CENTER" prefHeight="45.0" prefWidth="133.0" style="-fx-border-color: #ccc; -fx-border-width: 2; -fx-border-radius: 20;" text="Warning">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="orderDate" alignment="CENTER" prefHeight="50.0" prefWidth="195.0" text="27/11/2022" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="orderId" prefHeight="71.0" prefWidth="300.0" style="-fx-wrap-text: true;" text="Sekiro: Shadow Die Twice" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderTotalPrice" prefHeight="35.0" prefWidth="355.0" style="-fx-wrap-text: true;" text="54" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <Label prefHeight="35.0" prefWidth="8.0" style="-fx-wrap-text: true;" text="\$" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <styleClass>
+      <String fx:value="rounded_box__v4" />
+      <String fx:value="shadow" />
+   </styleClass>
+</HBox>

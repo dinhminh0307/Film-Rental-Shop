@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.HelloController">
+   <children>
+      <ImageView fx:id="backgroundImg" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="60.0" layoutY="30.0" prefHeight="334.0" prefWidth="480.0" styleClass="welcome_panel" stylesheets="@styles.css">
+         <children>
+            <Button fx:id="loginButton" layoutX="109.0" layoutY="175.0" mnemonicParsing="false" onAction="#onLoginButton" prefHeight="25.0" prefWidth="265.0" styleClass="button__primary" stylesheets="@styles.css" text="Login" />
+            <Button fx:id="registerButton" layoutX="108.0" layoutY="216.0" mnemonicParsing="false" onAction="#onRegisterButton" prefHeight="25.0" prefWidth="265.0" styleClass="button__primary" stylesheets="@styles.css" text="Register" />
+            <Button fx:id="exitButton" layoutX="109.0" layoutY="255.0" mnemonicParsing="false" onAction="#onExitButton" prefHeight="25.0" prefWidth="265.0" styleClass="button__primary" stylesheets="@styles.css" text="Exit" />
+            <Label layoutX="54.0" prefHeight="113.0" prefWidth="376.0" text="WELCOME" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="72.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

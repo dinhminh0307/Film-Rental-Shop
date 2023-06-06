@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.UserOrdersControllers">
+    <top>
+        <AnchorPane fx:id="navbarPane" prefHeight="80.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+    </top>
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="520.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onBackToShopping" prefHeight="26.0" prefWidth="132.0" text="Back To Shopping" />
+         </children></VBox>
+    </left>
+    <right>
+        <VBox prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </right>
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="520.0" prefWidth="885.0">
+                    <children>
+                        <AnchorPane prefHeight="63.0" prefWidth="566.0">
+                            <children>
+                                <Label prefHeight="44.0" prefWidth="882.0" style="-fx-border-color: #ccc; -fx-border-width: 0 0  2 0;" text="My Order">
+                                    <font>
+                                        <Font name="Arial Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="ordersQuantityDisplay" layoutX="745.0" prefHeight="44.0" prefWidth="137.0" text="3">
+                                    <font>
+                                        <Font name="Arial Bold" size="20.0" />
+                                    </font>
+                                    <graphic>
+                                        <Label prefHeight="44.0" prefWidth="78.0" style="-fx-border-color: #ccc; -fx-border-width: 0 0  2 0;" text="Orders: ">
+                                            <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                    </graphic>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <ScrollPane prefHeight="520.0" prefWidth="687.0" stylesheets="@../styles.css">
+                            <content>
+                                <VBox fx:id="ordersDisplay" alignment="TOP_CENTER" prefHeight="520.0" prefWidth="865.0" spacing="20.0">
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding></VBox>
+                            </content>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </ScrollPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+   <bottom>
+      <AnchorPane fx:id="footerPane" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

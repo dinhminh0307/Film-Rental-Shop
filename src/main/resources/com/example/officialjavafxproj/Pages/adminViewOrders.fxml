@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.AdminViewOrderController">
+    <top>
+        <AnchorPane fx:id="navbar" prefHeight="80.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+    </top>
+    <left>
+        <VBox prefHeight="711.0" prefWidth="229.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="195.0" text="Filter">
+                    <font>
+                        <Font name="Arial" size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="12.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets top="24.0" />
+                    </VBox.margin>
+                </Separator>
+                <TextField fx:id="searchOrder" prefHeight="0.0" prefWidth="157.0" promptText="Search By Order ID">
+                    <VBox.margin>
+                        <Insets top="24.0" />
+                    </VBox.margin>
+                </TextField>
+                <Button fx:id="search" mnemonicParsing="false" onAction="#onSearchOrderButton" prefHeight="25.0" prefWidth="87.0" text="Search">
+                    <VBox.margin>
+                        <Insets left="70.0" top="24.0" />
+                    </VBox.margin>
+                </Button>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <VBox spacing="20.0">
+               <children>
+                  <RadioButton fx:id="sortByOrderID" mnemonicParsing="false" onAction="#onOrderIDSortButton" text="Sort By Order ID" />
+                  <RadioButton fx:id="sortByOrderDate" mnemonicParsing="false" onAction="#onOrderDateSortButton" text="Sort By Order Date" />
+                  <RadioButton fx:id="sortByUserID" mnemonicParsing="false" onAction="#onUserIDSortButton" text="Sort By User ID" />
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+            </children></VBox>
+    </left>
+    <center>
+        <VBox prefHeight="568.0" prefWidth="771.0" BorderPane.alignment="CENTER">
+            <children>
+                <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="724.0" prefWidth="1050.0" stylesheets="@../styles.css">
+                    <content>
+                        <GridPane fx:id="gridPane" gridLinesVisible="true" prefHeight="32.0" prefWidth="31.0" style="-fx-padding: 20px;" />
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+    </center>
+   <bottom>
+      <AnchorPane fx:id="footerPane" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

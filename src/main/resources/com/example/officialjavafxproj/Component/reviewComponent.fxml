@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="90.0" prefWidth="320.0" style="-fx-border-width: 2; -fx-border-color: black; -fx-padding: 5; -fx-border-radius: 15; -fx-background-color: white; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../component.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.Component.ReviewComponent">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="340.0">
+         <children>
+            <Label fx:id="usernameDisplay" prefHeight="24.0" prefWidth="291.0" text="trungxiro: ">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="reviewDateDisplay" prefHeight="24.0" prefWidth="291.0" text="trungxiro: ">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="ratingDisplay" alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="38.0" text="3">
+               <font>
+                  <Font name="Arial Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Public/star.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label fx:id="reviewDisplay" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="340.0" style="-fx-wrap-text: true;" text="Label" />
+   </children>
+</VBox>

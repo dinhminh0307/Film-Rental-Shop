@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="391.0" maxWidth="216.0" onMouseClicked="#onProductClicked" prefHeight="356.0" prefWidth="216.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 15; -fx-background-radius: 15;" stylesheets="@../component.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.Component.ProductComponentControllers">
+   <children>
+      <VBox alignment="CENTER" layoutX="4.0" layoutY="2.0" prefHeight="350.0" prefWidth="208.0" stylesheets="@../component.css">
+         <children>
+            <ImageView fx:id="productImageView" fitHeight="208.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <VBox prefHeight="145.0" prefWidth="208.0">
+               <children>
+                  <Label fx:id="averageRatingDisplay" prefHeight="25.0" prefWidth="85.0" style="-fx-wrap-text: true;" text="3.7" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Public/star-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="productTitleDisplay" prefHeight="55.0" prefWidth="196.0" style="-fx-wrap-text: true;" text="Seikiro: Shadow twighlight " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="44.0" prefWidth="192.0">
+                     <children>
+                        <Label fx:id="productStatusDisplay" prefHeight="44.0" prefWidth="100.0" text="AVAILABLE" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="44.0" prefWidth="0.0" />
+                        <Label fx:id="productLoanDisplay" prefHeight="44.0" prefWidth="100.0" text="1-WEEK" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="productPriceDisplay" prefHeight="29.0" prefWidth="196.0" text="\$fddsfsdf" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <Label text="Price:" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <styleClass>
+      <String fx:value="shadow" />
+      <String fx:value="rounded_box__v2" />
+   </styleClass>
+</AnchorPane>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.ProductDetailsControllers">
+   <top>
+      <AnchorPane fx:id="navbarPane" prefHeight="80.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      
+   </center>
+   <center>
+      <HBox prefHeight="520.0" prefWidth="1246.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="520.0" prefWidth="746.0">
+               <children>
+                  <ImageView fx:id="productDetailImage" fitHeight="200.0" fitWidth="350.0" layoutX="167.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="54.0" layoutY="280.0" />
+                  <HBox layoutX="13.0" layoutY="247.0" prefHeight="273.0" prefWidth="674.0">
+                     <children>
+                        <VBox prefHeight="273.0" prefWidth="325.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="325.0">
+                                 <children>
+                                    <Label prefHeight="34.0" prefWidth="225.0" style="-fx-border-color: #ccc; -fx-border-width: 0 0 2 0;" text="Ratings:">
+                                       <font>
+                                          <Font name="Arial Bold" size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="averageStarDisplay" prefHeight="34.0" prefWidth="80.0" style="-fx-border-color: #ccc; -fx-border-width: 0 0 2 0;" text="4.5">
+                                       <font>
+                                          <Font name="Arial Bold" size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding>
+                                       <graphic>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Image/Public/star-removebg-preview.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <AnchorPane fx:id="ratingChartDisplay" prefHeight="238.0" prefWidth="325.0" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="reviewBoxDisplay" prefHeight="273.0" prefWidth="350.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="520.0" prefWidth="398.0">
+               <children>
+                  <HBox prefHeight="57.0" prefWidth="468.0">
+                     <children>
+                        <Label fx:id="productDetailTitleDisplay" prefHeight="56.0" prefWidth="319.0" text="Seikiro Shadows Die Twice">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <Label fx:id="productDetailYearDisplay" prefHeight="55.0" prefWidth="75.0" style="-fx-padding: 10; -fx-wrap-text: true;" text="1994">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="productDetailStatusDisplay" prefHeight="55.0" prefWidth="468.0" style="-fx-padding: 10; -fx-wrap-text: true;" text="AVAILABLE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <Label text="Status: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <HBox prefHeight="55.0" prefWidth="468.0">
+                     <children>
+                        <Label fx:id="productDetailTypeDisplay" prefHeight="52.0" prefWidth="139.0" style="-fx-padding: 10; -fx-wrap-text: true;" text="GAME">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <Label text="Type: ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <Label fx:id="productDetailGenreDisplay" prefHeight="55.0" prefWidth="202.0" style="-fx-padding: 10; -fx-wrap-text: true;" text="ACTION">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <Label text="Genre: ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="productDetailLoanTypeDisplay" prefHeight="55.0" prefWidth="468.0" style="-fx-padding: 10; -fx-wrap-text: true;" text="1-WEEK">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <Label text="Renting Duration: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="productDetailStockDisplay" prefHeight="55.0" prefWidth="468.0" style="-fx-padding: 10; -fx-wrap-text: true;" text="10">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <Label text="Items In Stock: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <HBox prefHeight="56.0" prefWidth="468.0">
+                     <children>
+                        <Label prefHeight="55.0" prefWidth="140.0" style="-fx-padding: 10; -fx-wrap-text: true;" text="Renting Quantity: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="56.0" prefWidth="168.0">
+                           <children>
+                              <Button fx:id="increaseButton" mnemonicParsing="false" onAction="#onIncreaseButton" text="Up" />
+                              <Label fx:id="productDetailQuantityDisplay" alignment="CENTER" prefHeight="17.0" prefWidth="56.0" text="1" />
+                              <Button fx:id="decreaseButton" mnemonicParsing="false" onAction="#onDecreaseButton" text="Down" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="193.0" prefWidth="468.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="rateItemButton" mnemonicParsing="false" onAction="#onRateItemButton" prefHeight="41.0" prefWidth="230.0" text="Rate this Item" />
+                        <Button fx:id="addToCartButton" mnemonicParsing="false" onAction="#onAddToCartButton" prefHeight="41.0" prefWidth="230.0" text="Add To Cart" />
+                        <Button mnemonicParsing="false" onAction="#onCheckCartButton" prefHeight="41.0" prefWidth="230.0" text="Check Cart" />
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets top="25.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <bottom>
+      <AnchorPane fx:id="footerPane" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+
+</BorderPane>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="728.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.AdminViewProfileControllers">
+   <children>
+      <AnchorPane fx:id="navbarPane" prefHeight="80.0" prefWidth="1280.0" />
+      <HBox layoutX="84.0" layoutY="124.0" prefHeight="420.0" prefWidth="1101.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="profileImage" fitHeight="338.0" fitWidth="400.0" layoutX="5.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Users/C004.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="338.0" prefWidth="397.0" style="-fx-border-color: #000000; -fx-border-width: 2px; -fx-border-radius: 5 0 0 5;">
+               <children>
+                  <Label prefHeight="76.0" prefWidth="426.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #ccc;" text="Profile">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="285.0">
+                     <children>
+                        <Label text="Customer ID: ">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="customerIdDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="285.0">
+                     <children>
+                        <Label text="Full Name: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fullNameDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="285.0">
+                     <children>
+                        <Label text="Address: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="addressDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Contact Number: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phoneNumDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Balance: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="balanceDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Status: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="statusDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="338.0" prefWidth="397.0" style="-fx-border-color: #000000; -fx-border-width: 2 2 2 0; -fx-border-radius: 0 5 5 0;">
+               <children>
+                  <Label prefHeight="76.0" prefWidth="426.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #ccc;" text="Account Info">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="285.0">
+                     <children>
+                        <Label text="Account ID: ">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="accountIdDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="285.0">
+                     <children>
+                        <Label text="Account Type: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="accountTypeDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="285.0">
+                     <children>
+                        <Label text="Account Points: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="accountPointsDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Label text="No. Returned Items: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="noReturnedItemsDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Label text="No. Free to borrow Item: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="noFreeToBorrowDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Maximum Items Can Borrow: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="noMaximumItemsDisplay" text="Label">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="96.0" layoutY="547.0" prefHeight="64.0" prefWidth="1089.0">
+         <children>
+            <AnchorPane prefHeight="80.0" prefWidth="338.0" />
+            <AnchorPane prefHeight="64.0" prefWidth="764.0">
+               <children>
+                  <Button alignment="CENTER" layoutX="626.0" layoutY="19.0" mnemonicParsing="false" onAction="#onUserPageBackButton" prefHeight="26.0" prefWidth="134.0" text="Back To User Page" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="footerPane" layoutX="1.0" layoutY="648.0" prefHeight="80.0" prefWidth="1280.0" />
+   </children>
+</AnchorPane>

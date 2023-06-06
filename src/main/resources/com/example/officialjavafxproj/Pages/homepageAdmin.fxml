@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.HomepageAdminControllers">
+   <top>
+      <AnchorPane fx:id="navbarPane" prefHeight="80.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox prefHeight="720.0" prefWidth="120.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <GridPane fx:id="chartDisplay" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="10.0" />
+         </padding></GridPane>
+   </center>
+   <bottom>
+      <AnchorPane fx:id="footerPane" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

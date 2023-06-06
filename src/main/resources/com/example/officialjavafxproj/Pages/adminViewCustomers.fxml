@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.AdminViewUserControllers">
+   <top>
+      <AnchorPane fx:id="navbarPane" prefHeight="80.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox alignment="CENTER_LEFT" prefHeight="551.0" prefWidth="230.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="21.0" prefWidth="195.0" text="Filter By Type:">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="12.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ChoiceBox fx:id="accountType" onMouseExited="#setDisableButton" prefHeight="34.0" prefWidth="141.0">
+               <VBox.margin>
+                  <Insets left="12.0" top="24.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="24.0" />
+               </VBox.margin>
+            </Separator>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="222.0" text="Sorted By User Id or Name">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="increasingOrder" mnemonicParsing="false" prefHeight="44.0" prefWidth="173.0" text="Ascending Order">
+               <padding>
+                  <Insets left="5.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="decreasingOrder" mnemonicParsing="false" text="Descending Order">
+               <padding>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sortByName" mnemonicParsing="false" prefHeight="44.0" prefWidth="145.0" text="SortByName">
+               <padding>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sortByStatus" mnemonicParsing="false" prefHeight="18.0" prefWidth="126.0" text="SortByStatus">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </padding>
+            </RadioButton>
+            <Separator prefWidth="200.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="227.0" text="Search By User Id or Name">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="searchUser" prefHeight="46.0" prefWidth="230.0" promptText="Search By Name or ID">
+               <VBox.margin>
+                  <Insets top="24.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="search" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onSearchUserButton" prefHeight="43.0" prefWidth="116.0" text="Search">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="deleteSearch" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onDeleteSearchButton" prefHeight="42.0" prefWidth="107.0" text="Reset">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+         </children></VBox>
+   </left>
+   <center>
+      <VBox prefHeight="503.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="505.0" prefWidth="1050.0" stylesheets="@../styles.css">
+               <content>
+                  <GridPane fx:id="gridPane" gridLinesVisible="true" prefHeight="40.0" prefWidth="245.0" style="-fx-padding: 20px;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <AnchorPane fx:id="footerPane" prefHeight="80.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

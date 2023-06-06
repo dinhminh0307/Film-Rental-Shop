@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="424.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialjavafxproj.Controller.Component.AdminReviewBoxComponentController">
+   <children>
+      <Label prefHeight="43.0" prefWidth="340.0" style="-fx-border-color: #ccc; -fx-border-width: 0 0 2 0;" text="Comments: ">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets right="10.0" />
+         </VBox.margin>
+      </Label>
+      <ScrollPane prefHeight="447.0" prefWidth="350.0" stylesheets="@../styles.css">
+         <content>
+            <VBox fx:id="reviewDisplay" prefHeight="570.0" prefWidth="337.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

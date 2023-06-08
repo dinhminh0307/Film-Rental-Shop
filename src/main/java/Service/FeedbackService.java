@@ -33,4 +33,14 @@ public class FeedbackService {
         }
         return total/totalFeedbacks;
     }
+
+    public static ArrayList<Feedback> getLowFeedBack() {
+        ArrayList<Feedback> tmp = new ArrayList<>();
+        for(Feedback fb : getAllReviews()) {
+            if(fb.getRating() <= 1) {
+                tmp.add(fb);
+            }
+        }
+        return  tmp;
+    }
 }

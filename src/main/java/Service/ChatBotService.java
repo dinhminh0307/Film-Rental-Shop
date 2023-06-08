@@ -29,30 +29,41 @@ public class ChatBotService {
         GPT.setChat(txt);
     }
 
+    public int getTheTotalProducts() {
+        int counter = 0;
+        for(Map.Entry<String, Product> tmp : DataAccess.getAllProducts().entrySet()) {
+            counter++;
+        }
+        return counter;
+    }
     public TreeMap<Product, String> getTopProduct() {
         return DataAccess.getTopProducts();
     }
     public void response(String userMessages) {
         String rep;
-        if(userMessages.toLowerCase().equals("hello")) {
+        if(userMessages.toLowerCase().trim().contains("hello")) {
             this.setChat("Hello! How Can I help you?");
         }
-        else if(userMessages.toLowerCase().contains("most rated games")) {
+        else if(userMessages.toLowerCase().trim().contains("rated")) {
             rep = "The top rated products: ";
             for(Map.Entry<Product, String> tmp : getTopProduct().entrySet()) {
                 rep += " " + tmp.getKey().getTitle();
             }
             this.setChat(rep);
         }
-        else if(userMessages.toLowerCase().contains("most hated games")) {
+        else if(userMessages.toLowerCase().trim().contains("hated games")) {
             rep = "The most hated products: ";
             for(Feedback fb : FeedbackService.getLowFeedBack()) {
                 rep += " " + fb.getProductId();
             }
             this.setChat(rep);
         }
-        else if(userMessages.toLowerCase().contains("bye")) {
+        else if(userMessages.toLowerCase().trim().contains("bye")) {
             rep = "See you again!";
+            this.setChat(rep);
+        }
+        else if(userMessages.toLowerCase().trim().contains("number of product")) {
+            rep = "There are " + getTheTotalProducts();
             this.setChat(rep);
         }
         else {
